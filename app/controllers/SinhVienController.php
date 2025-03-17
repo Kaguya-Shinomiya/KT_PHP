@@ -172,5 +172,20 @@
                 echo "Đã xảy ra lỗi khi xóa sinh viên.";
             }
         }
+
+        public function login()
+        {
+            include __DIR__ . '/../views/sinhvien/dangnhap.php';
+        }
+
+        public function kiemtra($MaSV)
+        {
+            if ($this->sinhVienModel->getSinhVienById($MaSV)) {
+                header('Location: /KT_PHP/index.php?action=index');
+            } else {
+                echo "Mã số sinh viên không tồn tại";
+            }
+        }
+
     }
 ?>

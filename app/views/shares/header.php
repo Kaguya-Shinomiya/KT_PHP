@@ -39,7 +39,7 @@
                         <a class="nav-link" href="#">Đăng Ký (<span id="cart-count">0</span>)</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Đăng Nhập</a>
+                        <a class="nav-link" href="/KT_PHP/index.php?action=login">Đăng Nhập</a>
                     </li>
                 </ul>
             </div>

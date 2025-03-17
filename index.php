@@ -28,6 +28,10 @@
         $controller_SV->delete($id);
     }else if($action === 'show' && $id) {
         $controller_SV->show($id);
+    }else if($action === 'login') {
+        $controller_SV->login();
+    }else if($action === 'kiemtra' && $id) {
+        $controller_SV->kiemtra($id);
     }
     
     elseif ($action === 'add_hp') {
