@@ -19,11 +19,7 @@
                 <td><?php echo htmlspecialchars($hp->TenHP, ENT_QUOTES, 'UTF-8'); ?></td>
                 <td><?php echo htmlspecialchars($hp->SoTinChi, ENT_QUOTES, 'UTF-8'); ?></td>
                 <td>
-                    <a href="/KT_PHP/index.php?action=edit&id=<?php echo $hp->MaHP; ?>" class="btn btn-warning">Sửa</a>
-                    <a href="/KT_PHP/index.php?action=show&id=<?php echo $hp->MaHP; ?>" class="btn btn-info">Chi tiết</a>
-                    <a href="/KT_PHP/index.php?action=delete&id=<?php echo $hp->MaHP; ?>" 
-                       class="btn btn-danger" 
-                       onclick="return confirm('Bạn có chắc chắn muốn xóa học phần này?');">Xóa</a>
+                    <a href="/KT_PHP/index.php?action=edit&id=<?php echo $hp->MaHP; ?>" class="btn btn-warning">Đăng ký</a>
                 </td>
             </tr>
         <?php endforeach; ?>
